@@ -11,9 +11,9 @@
 I want to study in RS School and become Frontend Developer.
 ## Education
 ### 2012-2017 Belarusian State University of Transport
-Speciality: Automation, telemechanics and communication for railway transport
-Specialization: Information transmission systems
-Qualification: Electrical Engineer
+Speciality: Automation, telemechanics and communication for railway transport  
+Specialization: Information transmission systems  
+Qualification: Electrical Engineer  
 ## Skills
 * HTML
 * CSS
@@ -26,7 +26,7 @@ Write a function that takes an integer as input, and returns the number of bits 
 var countBits = function(n) {
   let b = n.toString(2);
   let count = 0;
-  for (let i = 0;i < b.length;i++){
+  for (let i = 0; i < b.length; i++){
     if(b[i] == '1'){
       count++;
     }
