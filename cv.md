@@ -11,9 +11,9 @@
 I want to study in RS School and become Frontend Developer.
 ## Education
 ### 2012-2017 Belarusian State University of Transport
-Speciality: Automation, telemechanics and communication for railway transport  
-Specialization: Information transmission systems  
-Qualification: Electrical Engineer  
+**Speciality**: Automation, telemechanics and communication for railway transport  
+**Specialization**: Information transmission systems  
+**Qualification**: Electrical Engineer  
 ## Skills
 * HTML
 * CSS
