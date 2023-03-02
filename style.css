@@ -1,3 +1,45 @@
+/* unbounded-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/unbounded-v3-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/unbounded-v3-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* unbounded-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/unbounded-v3-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/unbounded-v3-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -29,13 +71,12 @@ body{
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  
 }
 .nav-link{
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
-  color:#F2DE79;
+  color:#ffffff;
   font-weight: 700;
 }
 
@@ -53,10 +94,10 @@ body{
 }
 
 .section-profile-photo{
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10%;
+  width:300px;
+  height: 300px;
+  object-fit:cover;
+  border-radius: 100%;
   box-shadow: 10px 10px 4px #3772A6;
   filter: grayscale(0.1) brightness(1.05);
   transition: .3s;
@@ -68,14 +109,27 @@ body{
   font-weight: 800;
   text-transform: uppercase;
   color: #3772A6;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
 }
 
 .main-title{
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
   font-size: 25px;
-  font-weight: 300;
   letter-spacing: 10px;
   line-height: 35px;
   word-spacing: 3px;
+}
+
+.section-item a{
+  color:#3772A6;
+}
+
+.section-item a:active{
+  color: #ffffff;
 }
 
 .column{
@@ -87,17 +141,17 @@ body{
 
 .column-left{
   width:35%;
-  background-color: #F2DE79;
+  background-color: #ffffff;
 }
 
 .column-right{
   width:65%;
   text-align: justify;
-  background-color: #b3a875;
+  background-color: #ffffff;
 }
 
 .footer{
-  background-color: #3772A6;
+  background-color: #ffffff;
 }
 
 .footer-container{
