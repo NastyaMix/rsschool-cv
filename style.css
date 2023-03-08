@@ -55,9 +55,11 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+  background-color: #ffd7be;
 }
 
 .container {
@@ -99,7 +101,7 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-   .nav-list a:hover:after, .nav-list .nav-item:after {width: 100%;}
+.nav-list a:hover:after, .nav-list .nav-item:after {width: 100%;}
 
 .nav-link:hover, .nav-link:active , .nav-link:visited {
   color: #fa5c47fd;
@@ -108,6 +110,10 @@ body {
 .main-container {
   display:flex;
   justify-content: space-between;
+}
+
+.section {
+  min-width: 100%;
 }
 
 .section-profile {
@@ -174,6 +180,7 @@ body {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 50%;
   padding: 20px;
 }
 
@@ -237,29 +244,108 @@ body {
   background-color: #ffffff;
 }
 
-.section-text{
+.section-text {
   display: flex;
+  justify-content: space-between;
+  text-align: left;
 }
 
-.text-info{
-  margin: 0;
+.year-info {
+  min-width: 25%;
 }
 
-.footer{
+.text-info {
+  margin: 0 40px;
+}
+
+.code {
+  overflow-x: auto;
+}
+
+.projects-item, .courses-item{
+  padding-left: 0;
+}
+
+.footer {
   background-color: #3772A6;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
-.rss{
-  width: 120px;
-  height: 45px;
-  background-image: url("./assets/svg/rss.svg");
+.footer-img {
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.rss-img {
+  width: 120px;
+  height: 45px;
+}
+
+.github-img {
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 1024px) {
+
+.nav-link {
+  padding: 0 15px;
+}
+
+.section-list {
+  padding-left: 25px;
+}
+
+.text-info {
+  margin: 0 25px;
+}
+}
+
+@media (max-width: 940px) {
+
+.nav-link {
+  padding: 0 10px;
+}
+
+.section-list {
+  padding-left: 15px;
+}
+
+.text-info {
+  margin: 0 15px;
+}
+}
+
+@media (max-width: 860px) {
+.nav-list {
+  padding-left: 0;
+}
+
+.nav-link {
+  padding: 0 7px;
+}
+}
+
+@media (max-width: 765px) {
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  min-width: 100%;
+}
 }
