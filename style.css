@@ -237,29 +237,40 @@ body {
   background-color: #ffffff;
 }
 
-.section-text{
+.section-text {
   display: flex;
 }
 
-.text-info{
+.text-info {
   margin: 0;
 }
 
-.footer{
+.projects-item{
+  padding-left: 0;
+}
+
+.footer {
   background-color: #3772A6;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
-.rss{
-  width: 120px;
-  height: 45px;
-  background-image: url("./assets/svg/rss.svg");
+.footer-img {
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.rss-img {
+  width: 120px;
+  height: 45px;
+}
+
+.github-img {
+  width: 45px;
+  height: 45px;
 }
