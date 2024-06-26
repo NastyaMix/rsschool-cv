@@ -1,47 +1,63 @@
 /* unbounded-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Unbounded';
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/unbounded-v3-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('assets/fonts/unbounded-v3-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('assets/fonts/unbounded-v3-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('assets/fonts/unbounded-v3-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* unbounded-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Unbounded';
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/unbounded-v3-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('assets/fonts/unbounded-v3-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('assets/fonts/unbounded-v3-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('assets/fonts/unbounded-v3-latin-700.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('assets/fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('assets/fonts/roboto-v30-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('assets/fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('assets/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('assets/fonts/roboto-v30-latin-700.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
 
 html {
@@ -90,25 +106,35 @@ body {
 }
 
 .nav-list a:after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    top: auto;
-    width: 0%;
-    bottom: 10px;
-    left: 0%;
-    background: #fa5c47fd;
-    transition: width 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 3px;
+  top: auto;
+  width: 0%;
+  bottom: 10px;
+  left: 0%;
+  background: #fa5c47fd;
+  transition: width 0.3s ease-in-out;
 }
 
-.nav-list a:hover:after, .nav-list .nav-item:after {width: 100%;}
+.nav-list a:hover:after,
+.nav-list .nav-item:after {
+  width: 100%;
+}
 
-.nav-link:hover, .nav-link:active , .nav-link:visited {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:visited {
   color: #fa5c47fd;
 }
 
+.header-burger,
+.nav-close {
+  display: none;
+}
+
 .main-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -124,17 +150,17 @@ body {
   text-align: center;
 }
 
-.section-profile-photo{
-  width:300px;
+.section-profile-photo {
+  width: 300px;
   height: 300px;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 100%;
   box-shadow: 10px 10px 4px #3772A6;
   filter: grayscale(0.1) brightness(1.05);
   transition: .3s;
 }
 
-.section-title{
+.section-title {
   margin-bottom: 20px;
   padding-left: 10px;
   font-size: 20px;
@@ -146,7 +172,7 @@ body {
   background-color: #3772A6;
 }
 
-.main-title{
+.main-title {
   font-family: 'Unbounded';
   font-style: normal;
   font-weight: 700;
@@ -158,45 +184,52 @@ body {
   background-color: #ffd7be;
 }
 
-.section-item{
+.section-item {
   position: relative;
   padding-left: 20px;
   list-style: none;
   line-height: 25px;
 }
 
-.section-item a{
+.section-item a {
   text-decoration: none;
   color: #3772A6;
   font-weight: 700;
 }
 
-.section-item a:hover, .section-item a:active,
+.section-item a:hover,
+.section-item a:active,
 .section-item a:visited {
   color: #fa5c47fd;
 }
 
-.column{
-  display:flex;
+.column {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-width: 50%;
   padding: 20px;
 }
 
-.column-left{
-  width:35%;
-  background-color:  #ffd7be;
+.column-left {
+  width: 35%;
+  background-color: #ffd7be;
 }
 
-.contacts-item:before , .skills-item:before{
+.contacts-item:before,
+.skills-item:before {
   content: "";
   position: absolute;
-  left:-6px;
+  left: -6px;
   width: 25px;
   height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .skills-item:nth-child(1):before {
@@ -208,11 +241,23 @@ body {
 }
 
 .skills-item:nth-child(3):before {
-  background-image: url("assets/svg/js.svg");
+  background-image: url("assets/svg/sass.svg");
 }
 
 .skills-item:nth-child(4):before {
+  background-image: url("assets/svg/js.svg");
+}
+
+.skills-item:nth-child(5):before {
+  background-image: url("assets/svg/typescript.svg");
+}
+
+.skills-item:nth-child(6):before {
   background-image: url("assets/svg/git.svg");
+}
+
+.skills-item:nth-child(7):before {
+  background-image: url("assets/svg/webpack.svg");
 }
 
 .contacts-item:nth-child(5):before {
@@ -238,8 +283,9 @@ body {
 .languages-item {
   padding-left: 0;
 }
+
 .column-right {
-  width:65%;
+  width: 65%;
   text-align: justify;
   background-color: #ffffff;
 }
@@ -250,19 +296,32 @@ body {
   text-align: left;
 }
 
+.section-text>.text-info {
+  text-indent: 0;
+}
+
 .year-info {
   min-width: 25%;
 }
 
-.text-info {
+.university-info {
+  display: flex;
+  flex-direction: column;
+  text-indent: 15px;
   margin: 0 40px;
+}
+
+.text-info p {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #3772A6;
 }
 
 .code {
   overflow-x: auto;
 }
 
-.projects-item, .courses-item{
+.projects-item,
+.courses-item {
   padding-left: 0;
 }
 
@@ -294,58 +353,58 @@ body {
 
 @media (max-width: 1024px) {
 
-.nav-link {
-  padding: 0 15px;
-}
+  .nav-link {
+    padding: 0 15px;
+  }
 
-.section-list {
-  padding-left: 25px;
-}
+  .section-list {
+    padding-left: 25px;
+  }
 
-.text-info {
-  margin: 0 25px;
-}
+  .text-info {
+    margin: 0 25px;
+  }
 }
 
 @media (max-width: 940px) {
 
-.nav-link {
-  padding: 0 10px;
-}
+  .nav-link {
+    padding: 0 10px;
+  }
 
-.section-list {
-  padding-left: 15px;
-}
+  .section-list {
+    padding-left: 15px;
+  }
 
-.text-info {
-  margin: 0 15px;
-}
+  .text-info {
+    margin: 0 15px;
+  }
 }
 
 @media (max-width: 860px) {
-.nav-list {
-  padding-left: 0;
-}
+  .nav-list {
+    padding-left: 0;
+  }
 
-.nav-link {
-  padding: 0 7px;
-}
+  .nav-link {
+    padding: 0 7px;
+  }
 }
 
 @media (max-width: 765px) {
 
-.nav-list {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.column {
-  min-width: 100%;
-}
+  .column {
+    min-width: 100%;
+  }
 }
