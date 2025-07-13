@@ -2,12 +2,12 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/unbounded-v3-latin-regular.woff2') format('woff2'),
+  src: url("assets/fonts/unbounded-v3-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-    url('assets/fonts/unbounded-v3-latin-regular.woff') format('woff');
+      url("assets/fonts/unbounded-v3-latin-regular.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -15,12 +15,12 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/unbounded-v3-latin-700.woff2') format('woff2'),
+  src: url("assets/fonts/unbounded-v3-latin-700.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-    url('assets/fonts/unbounded-v3-latin-700.woff') format('woff');
+      url("assets/fonts/unbounded-v3-latin-700.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -28,12 +28,12 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+  src: url("assets/fonts/roboto-v30-latin-regular.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-    url('assets/fonts/roboto-v30-latin-regular.woff') format('woff');
+      url("assets/fonts/roboto-v30-latin-regular.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -41,16 +41,14 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+  src: url("assets/fonts/roboto-v30-latin-700.woff2") format("woff2"),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-    url('assets/fonts/roboto-v30-latin-700.woff') format('woff');
+      url("assets/fonts/roboto-v30-latin-700.woff") format("woff");
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -72,7 +70,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   background-color: #ffd7be;
@@ -105,8 +103,8 @@ body.scroll-hidden {
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
-  font-family: 'Unbounded';
-  color: #3772A6;
+  font-family: "Unbounded";
+  color: #3772a6;
   font-weight: 400;
 }
 
@@ -159,9 +157,9 @@ body.scroll-hidden {
   height: 300px;
   object-fit: cover;
   border-radius: 100%;
-  box-shadow: 10px 10px 4px #3772A6;
+  box-shadow: 10px 10px 4px #3772a6;
   filter: grayscale(0.1) brightness(1.05);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .section-title {
@@ -169,22 +167,22 @@ body.scroll-hidden {
   padding-left: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-style: normal;
   font-weight: 400;
   color: #ffd7be;
-  background-color: #3772A6;
+  background-color: #3772a6;
 }
 
 .main-title {
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 10px;
   line-height: 35px;
   word-spacing: 3px;
-  color: #3772A6;
+  color: #3772a6;
   background-color: #ffd7be;
 }
 
@@ -197,7 +195,7 @@ body.scroll-hidden {
 
 .section-item a {
   text-decoration: none;
-  color: #3772A6;
+  color: #3772a6;
   font-weight: 700;
 }
 
@@ -300,7 +298,7 @@ body.scroll-hidden {
   text-align: left;
 }
 
-.section-text>.text-info {
+.section-text > .text-info {
   text-indent: 0;
 }
 
@@ -317,7 +315,7 @@ body.scroll-hidden {
 
 .text-info p {
   margin-bottom: 10px;
-  border-bottom: 1px solid #3772A6;
+  border-bottom: 1px solid #3772a6;
 }
 
 .code {
@@ -330,7 +328,7 @@ body.scroll-hidden {
 }
 
 .footer {
-  background-color: #3772A6;
+  background-color: #3772a6;
 }
 
 .footer-container {
@@ -338,6 +336,11 @@ body.scroll-hidden {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+
+.footer-container span {
+  font-family: "Unbounded";
+  font-weight: 700;
 }
 
 .footer-img {
@@ -356,7 +359,6 @@ body.scroll-hidden {
 }
 
 @media (max-width: 1024px) {
-
   .nav-link {
     padding: 0 15px;
   }
@@ -371,7 +373,6 @@ body.scroll-hidden {
 }
 
 @media (max-width: 940px) {
-
   .nav-link {
     padding: 0 10px;
   }
@@ -391,6 +392,7 @@ body.scroll-hidden {
   }
 
   .nav-link {
+    white-space: nowrap;
     padding: 0 7px;
   }
 }
@@ -421,7 +423,7 @@ body.scroll-hidden {
     z-index: 9;
     background-color: #ffd7be;
     transform: translateX(100%);
-    transition: .1s all linear;
+    transition: 0.1s all linear;
   }
 
   .nav-list {
@@ -444,7 +446,7 @@ body.scroll-hidden {
     display: block;
     width: 100%;
     height: 2.5px;
-    background-color: #3772A6;
+    background-color: #3772a6;
     position: absolute;
     transition: all 0.3s ease-in-out;
   }
@@ -461,11 +463,11 @@ body.scroll-hidden {
     transform: translateX(0);
   }
 
-  .nav-active~.burger>.burger-line_first {
+  .nav-active ~ .burger > .burger-line_first {
     transform: rotate(-30deg);
   }
 
-  .nav-active~.burger>.burger-line_second {
+  .nav-active ~ .burger > .burger-line_second {
     transform: rotate(30deg);
   }
 }
